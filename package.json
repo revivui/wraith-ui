@@ -1,0 +1,25 @@
+{
+  "name": "wraith-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "bundle exec wraith reset_shots configs/capture.yaml",
+    "build": "bundle exec wraith capture configs/capture.yaml",
+    "predeploy": "mv shots/gallery.html shots/index.html",
+    "deploy": "push-dir --dir=shots --branch=gh-pages --allow-unclean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/revivui/wraith-ui.git"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/revivui/wraith-ui/issues"
+  },
+  "homepage": "https://github.com/revivui/wraith-ui#readme",
+  "devDependencies": {
+    "push-dir": "^0.4.1"
+  }
+}
