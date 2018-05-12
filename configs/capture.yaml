@@ -13,7 +13,7 @@
 ##############################################################
 
 # (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
-browser: "phantomjs"
+browser: "casperjs"
 
 # (required) The domains to take screenshots of.
 domains:
@@ -40,7 +40,7 @@ screen_widths:
   - 1280x1024
 
 # (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
-before_capture: 'javascript/disable_javascript--phantom.js'
+# before_capture: 'javascript/disable_javascript--casper.js'
 
 # (required) The directory that your screenshots will be stored in
 directory: 'shots'
