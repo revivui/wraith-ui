@@ -17,16 +17,14 @@ browser: "casperjs"
 
 # (required) The domains to take screenshots of.
 domains:
-  live: "https://netlify-hugo-cms.netlify.com"
-  test: "https://develop--netlify-hugo-cms.netlify.com"
+  live: "https://netlify-gatsby-cms.netlify.com"
+  test: "https://develop--netlify-gatsby-cms.netlify.com"
 
 # (required) The paths to capture. All paths should exist for both of the domains specified above.
 paths:
   home:       /
-  blog:       /post
-  contact:    /contact
+  about:      /about
   products:   /products
-  values:     /values
 
 # (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
 screen_widths:
